@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(50% - 100px);
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.main {
+    width: 200px;
+    height: 200px;
+}
+
+.arrow {
+    
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    font-size: 30px;
+}
+
+.arrow:active {
+    border-color: red;
+}
+
+.left {
+    margin: 20px;
+    padding: 10px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    margin: 20px;
+    padding: 10px; 
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+button {
+    border: none;
+    background-color: inherit;
+}
+
