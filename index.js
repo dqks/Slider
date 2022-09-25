@@ -1,7 +1,6 @@
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 const img = document.querySelector('.main');
-let arr = [1, 2, 3];
 let n = 0;
 let images = [
     firstImage = {
@@ -16,18 +15,17 @@ let images = [
 ]
 
 right.addEventListener("click", () => {
-    // if (img.src != 'img/1.jpg') {
-    //     n++
-    //     }
 n++
+if (n === 3) {
+    n = 0
+}
 img.src = images[n].src
-console.log(n)
-return n 
 })
 
 left.addEventListener('click', () => {
     n--
+    if (n === -1) {
+        n = 3
+    }
     img.src = images[n].src
-    console.log(n)
 })
-
