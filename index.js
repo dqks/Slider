@@ -24,8 +24,8 @@ img.src = images[n].src
 
 left.addEventListener('click', () => {
     n--
-    if (n === -1) {
-        n = 3
+    if (n < 0) {
+        n = 2
     }
     img.src = images[n].src
 })
